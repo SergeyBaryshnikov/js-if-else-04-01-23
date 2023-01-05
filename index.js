@@ -43,6 +43,18 @@ if (numA * numB === 0) {
 }
 console.log(result);
 
+result = numA * numB;
+if (result === 0) {
+  if (numA !== numB) {
+    result = numC;
+  } else {
+    result = NaN;
+  }
+} else if (result < 0) {
+  result = numA / numB;
+}
+console.log(result);
+
 // Якщо число додатнє, парне, кратне 3 і 6 одночасно - вивести win, інакше - lose.
 // Першим обробляти варіант з lose.
 
