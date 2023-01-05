@@ -1,5 +1,5 @@
-let numA = 12;
-let numB = -4;
+let numA = 1;
+let numB = 0;
 let numC = 999;
 let result;
 
@@ -30,7 +30,11 @@ if (numA * numB === 0 && numA !== numB) {
 }
 console.log(result);
 
-if (numA * numA === 0) {
+//сначала я сделал опечатку и написал if (numA * numA === 0)
+//но все равно вывдило правильно, как в задании, не могу понять почему,
+//если например  в переменной numA = 1, то 1*1=1 и это !==0,
+//но все равно срабатывет вложенный if
+if (numA * numB === 0) {
   if (numA !== numB) {
     result = numC;
   } else {
