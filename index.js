@@ -1,6 +1,6 @@
 let numA = 0;
 let numB = 0;
-const numC = 0;
+// const numC = 0;
 let result;
 
 // Є дві змінні, якщо вони з однаковим знаком - то перемножити і вивести результат,
@@ -9,7 +9,8 @@ let result;
 // якщо обидва нулі - то покласти в результат NaN і вивести результат.
 
 if ((numA === 0 && numB !== 0) || (numA !== 0 && numB === 0)) {
-  result = numC;
+  // result = numC;
+  result = numA || numB;
 } else if ((numA > 0 && numB > 0) || (numA < 0 && numB < 0)) {
   result = numA * numB;
 } else if ((numA > 0 && numB < 0) || (numA < 0 && numB > 0)) {
@@ -20,7 +21,8 @@ if ((numA === 0 && numB !== 0) || (numA !== 0 && numB === 0)) {
 console.log(result);
 
 if (numA * numB === 0 && numA !== numB) {
-  result = numC;
+  // result = numC;
+  result = numA || numB;
 } else if (numA * numB > 0) {
   result = numA * numB;
 } else if (numA * numB < 0) {
@@ -32,7 +34,8 @@ console.log(result);
 
 if (numA * numB === 0) {
   if (numA !== numB) {
-    result = numC;
+    // result = numC;
+    result = numA || numB;
   } else {
     result = NaN;
   }
@@ -46,7 +49,8 @@ console.log(result);
 result = numA * numB;
 if (result === 0) {
   if (numA !== numB) {
-    result = numC;
+    // result = numC;
+    result = numA || numB;
   } else {
     result = NaN;
   }
